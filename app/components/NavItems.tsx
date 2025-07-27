@@ -4,7 +4,12 @@ import {cn} from "../../lib/utils";
 // import {logoutUser} from "~/appwrite/auth";
 
 const NavItems = ({ handleClick }: { handleClick?: () => void}) => {
-    const user = useLoaderData();
+    // const user = useLoaderData();
+    const user = {
+        imageUrl: null,
+        name: "John Doe",
+        email:"JohnD@gmail.com"
+    }
     const navigate = useNavigate();
 
     // const handleLogout = async () => {
